@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CodeStyleChecker>
+    <SourceDir>/Users/renzhengwei/Workstation/Workspace/git/CodeStyleChecker/src</SourceDir>
+    <FileInclusion>
+        src/main/java/info/woody/api/intellij/plugin/csct/CodeStyleCheckContext.groovy
+        src/main/java/info/woody/api/intellij/plugin/csct/CodeStyleCheckRule.groovy
+        src/main/java/info/woody/api/intellij/plugin/csct/CodeStyleCheckRuleImpl.groovy
+        src/test/java/info/woody/api/intellij/plugin/csct/CodeStyleCheckRuleTest.java
+    </FileInclusion>
+    <FileExclusion>
+        ErrorCodes.java
+        ConfigService.java
+        TestHelper.java
+    </FileExclusion>
+    <FileExclusionPattern>^.*(Controller).*$</FileExclusionPattern>
+</CodeStyleChecker>
