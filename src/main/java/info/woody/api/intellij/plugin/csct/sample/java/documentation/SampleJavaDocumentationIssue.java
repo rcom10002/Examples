@@ -1,8 +1,5 @@
 package info.woody.api.intellij.plugin.csct.sample.java.documentation;
 
-import java.security.*;
-import java.applet.Applet;
-
 /**
  * This is wrong Format and includes codeStyleWord
  * @since
@@ -10,19 +7,28 @@ import java.applet.Applet;
 public class SampleJavaDocumentationIssue {
     private String test;
 
-    /**
-     * @param test This is testParam.
-     */
     public SampleJavaDocumentationIssue(String test) {
         this.test = test;
     }
 
     /**
-     *
      */
-    public void testMe() {
+    public String testMe1(String hi) {
+        return hi + ", there";
     }
 
-    private void testYou() {
+    /**
+     *
+     */
+    public String testMe2(String hi) {
+        return hi + ", there";
+    }
+
+    /**
+     * @param hi
+     * @return
+     */
+    public String testMe3(String hi) {
+        return hi + ", there";
     }
 }

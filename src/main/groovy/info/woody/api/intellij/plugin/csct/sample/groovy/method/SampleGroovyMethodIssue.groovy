@@ -12,4 +12,7 @@ public class SampleGroovyMethodIssue {
 
     public void hiThere() {
     }
+
+    protected void special$Name() {
+    }
 }

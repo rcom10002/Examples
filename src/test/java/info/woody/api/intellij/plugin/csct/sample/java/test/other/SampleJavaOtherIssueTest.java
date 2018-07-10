@@ -20,11 +20,15 @@ public class SampleJavaOtherIssueTest {
 
     @Test
     public void hiTestMe() {
-        String redisKey = null;
-        if (redisKey == null){
+        String redisKey= null; // FORMAT ERROR
+        String badStringNaming =null; // FORMAT ERROR
+        if (redisKey == null){ // FORMAT ERROR
             System.out.println("requestProperties");
         }
-        if (redisKey.equals(KEY_VALUE)) {
+        if(redisKey.equals(KEY_VALUE)) { // FORMAT ERROR
+            System.out.println();
+        }
+        if (redisKey.equalsIgnoreCase(SampleJavaOtherIssueTest.KEY_VALUE)) {
             System.out.println();
         }
         assert "".equals(redisKey);
@@ -46,11 +50,11 @@ public class SampleJavaOtherIssueTest {
         boolean xyz = 1 > 2;
         if (xyz == true) {
             System.out.println(SampleJavaOtherIssueTest.TestTypeEnum.JAVA);
-        } else if (SampleJavaOtherIssueTest.TestTypeEnum.JAVA.equals(100)) {
+        }else if (SampleJavaOtherIssueTest.TestTypeEnum.JAVA.equals(100)) { // FORMAT ERROR
             System.out.println("test");
         }
 
-        try {
+        try{ // FORMAT ERROR
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
