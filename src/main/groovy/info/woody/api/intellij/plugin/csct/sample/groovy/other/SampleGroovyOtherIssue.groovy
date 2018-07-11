@@ -15,8 +15,13 @@ public class SampleGroovyOtherIssue {
      * @param test This is testParam.
      */
     public SampleGroovyOtherIssue(String test) {
+        List abcList = [10]
         this.test = test;
         println "constant"
+        println "."
+        abcList[0] = 1
+        abcList[3] = 9
+        def x
     }
 
     @Test
