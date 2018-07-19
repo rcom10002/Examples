@@ -1,7 +1,5 @@
 package info.woody.api.intellij.plugin.csct.sample.groovy.other;
 
-import org.junit.Test
-
 import java.security.SecureRandom;
 
 /**
@@ -37,15 +35,19 @@ public class SampleGroovyOtherIssue {
         String duplicateExpression2 = this.hiTestMe()
     }
 
-    @Test
+    @Deprecated
     public String hiTestMe() {
+        try {
+            int x = 1 / 0
+        } catch (e) {
+            e.printStackTrace()
+        }
         if (this.test == "200 is OK") {
             return "hi, there"
         }
         return "there?"
     }
 
-    @Test
     public String hiThere() {
         String duplicateExpressionA = this.hiTestMe()
         String duplicateExpressionB = this.hiTestMe()
