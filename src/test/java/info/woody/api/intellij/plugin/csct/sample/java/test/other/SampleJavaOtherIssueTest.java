@@ -4,12 +4,13 @@ import org.junit.Test;
 
 /**
  * This is wrong Format and includes codeStyleWord
- * @since
+ * @author tester.surname
  */
 public class SampleJavaOtherIssueTest {
     private static final String KEY_VALUE = "The constant should be left operand.";
 
     private String test;
+    private String acronymFORMATField;
 
     /**
      * @param test This is testParam.
@@ -17,6 +18,12 @@ public class SampleJavaOtherIssueTest {
     public SampleJavaOtherIssueTest(String test) {
         this.test = test;
     }
+
+    private void acronymFORMATMethod() {
+        int acronymFORMATVariable = 100;
+    }
+
+    class AcronymFORMATType {}
 
     @Test
     public void hiTestMe() {

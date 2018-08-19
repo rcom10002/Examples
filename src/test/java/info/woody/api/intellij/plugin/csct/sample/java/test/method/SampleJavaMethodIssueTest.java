@@ -4,10 +4,13 @@ import org.junit.Test;
 
 /**
  * This is wrong Format and includes codeStyleWord
- * @since
+ * Create by tester.surname on 09/12/2017
  */
 public class SampleJavaMethodIssueTest {
     private String test;
+
+    public void setup() {
+    }
 
     /**
      * @param test This is testParam.
